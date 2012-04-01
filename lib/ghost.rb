@@ -2,7 +2,7 @@ $: << File.dirname(__FILE__)
 
 case RUBY_PLATFORM
 when /darwin/
-  require 'ghost/mac-host'
+  require 'ghost/linux-host' #lion has problems 
 when /linux/
   require 'ghost/linux-host'
 end
